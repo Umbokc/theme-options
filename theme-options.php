@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['delete_options'])){
-	delete_option( 'u_panda_theme_option' );
+	delete_option( 'u_my_theme_title_theme_option' );
 }
 
 add_action( 'admin_init', 'theme_options_init' );
@@ -12,7 +12,7 @@ add_action( 'admin_menu', 'theme_options_add_page' );
  * Init plugin options to white list our options
  */
 function theme_options_init(){
-	register_setting( 'u_theme_options', 'u_panda_theme_option', 'theme_options_validate' );
+	register_setting( 'u_theme_options', 'u_my_theme_title_theme_option', 'theme_options_validate' );
 }
 
 /**
@@ -42,7 +42,7 @@ function theme_options_do_page(){
 	if (!isset($_REQUEST['settings-updated']))
 		$_REQUEST['settings-updated'] = false;
 
-	$to = new ThemeOptions($my_options, 'u_panda_theme_option', 'u_theme_options');
+	$to = new ThemeOptions($my_options, 'u_my_theme_title_theme_option', 'u_theme_options');
 	$to->run();
 }
 
