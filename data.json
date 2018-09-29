@@ -1,0 +1,54 @@
+{
+    "main2": {
+        "fields": {
+            "array": {
+                "fields": {
+                    "a_0": {
+                        "label": "The item",
+                        "type": "tab",
+                        "fields": {
+                            "title": {
+                                "default": "Value",
+                                "label": "The title",
+                                "type": "input"
+                            },
+                            "iamge": {
+                                "default": "http:\/\/placehold.it\/300x300",
+                                "label": "The iamge",
+                                "type": "img"
+                            }
+                        }
+                    }
+                },
+                "label": "The array",
+                "type": "array"
+            },
+            "title": {
+                "default": "Value",
+                "label": "The title",
+                "type": "input"
+            }
+        },
+        "label": "Main 2"
+    },
+    "has sub": {
+        "label": "Has sub",
+        "fields": {
+            "2222": {
+                "label": "The field",
+                "type": "input",
+                "default": "The value"
+            },
+            "field": {
+                "label": "The field",
+                "type": "input",
+                "default": "The value"
+            },
+            "field2": {
+                "label": "The field",
+                "type": "input",
+                "default": "The value"
+            }
+        }
+    }
+}
